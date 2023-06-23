@@ -6,12 +6,21 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+:root {
+  --grey: rgba(205, 223, 223, 0.589);
+  --dark: black;
+  --light: white;
+  --second: rgb(241, 91, 116);
+
+  --shadow: rgba(0, 0, 0, 0.185);
+}
+
 /* Header */
 
 header {
   padding: 20px;
   width: 70vw; /* remove */
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.185);
+  box-shadow: 1px 1px 10px 1px var(--shadow);
 }
 
 .header__first,
@@ -42,7 +51,7 @@ header > .flex > .flex {
 }
 
 .search-bar input {
-  background-color: rgb(198, 207, 207);
+  background-color: var(--grey);
   padding: 0 20px;
   border: none;
   border-radius: 20px;
@@ -59,7 +68,7 @@ header button {
   height: 40px;
   border: none;
   border-radius: 20px;
-  background-color: rgb(241, 91, 116);
+  background-color: var(--second);
   color: white;
 }
 
@@ -74,7 +83,7 @@ aside {
   gap: 50px !important;
   flex-direction: column;
   background-color: black;
-  color: white;
+  color: var(--light);
   width: 300px;
   height: 100vh;
 }
@@ -97,11 +106,11 @@ li {
 
 li p {
   transition: all 500ms;
-  border-bottom: 3px solid rgba(156, 47, 65, 0);
+  border-bottom: 3px solid var(--dark);
 }
 
 li p:hover {
-  border-bottom: 3px solid rgb(206, 93, 111);
+  border-bottom: 3px solid var(--second);
 }
 
 .logo svg {
@@ -117,4 +126,12 @@ h1 {
   width: 24px;
   height: 24px;
   margin: 0 8px;
+}
+
+/* Main */
+
+main {
+  width: 70vw;
+  height: 100vh;
+  background-color: var(--grey);
 }
