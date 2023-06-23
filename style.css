@@ -6,6 +6,69 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+/* Header */
+
+header {
+  padding: 20px;
+  width: 70vw; /* remove */
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.185);
+}
+
+.header__first,
+.header__second {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__first {
+  margin-bottom: 30px;
+}
+
+header > .flex > .flex {
+  align-items: center;
+}
+
+.search-bar {
+  width: 70%;
+}
+
+.profile {
+  background-image: url(https://picsum.photos/id/250/367/267);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.search-bar input {
+  background-color: rgb(198, 207, 207);
+  padding: 0 20px;
+  border: none;
+  border-radius: 20px;
+  width: 100%; /* remove */
+  height: 30px; /* remove */
+}
+
+.header__profile p {
+  font-weight: 600;
+}
+
+header button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(241, 91, 116);
+  color: white;
+}
+
+.buttons > button + button {
+  margin-left: 20px;
+}
+
+/* Aside */
+
 aside {
   padding: 20px;
   gap: 50px !important;
